@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/
+    dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>CMU Dining Services</title>
+</head>
+
+
+<body>
+	<header>
+        <!--navigation for website links-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  			<a class="navbar-brand" id = "logo" href="https://www.cmu.edu/">Carnegie Mellon University</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+  			</button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="index.html">Locations <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="https://get.cbord.com/cmu/full/prelogin.php">Get Funds</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="https://app.mynutritioncalculator.net/cmu/">Nutrition Calculator</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>	
+    </header>
+
+	<main>
+		<div class="offset-1 col-10">
+			<img id = "cmuMap" src="images/map.jpg" alt="" usemap="#Map" />
+				<map name="Map" id="Map">
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=123" shape="circle" coords="397, 438, 16" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=115" shape="circle" coords="514, 362, 15" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=93" shape="circle" coords="413, 332, 17" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=110" shape="circle" coords="472, 383, 16" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=94" shape="circle" coords="491, 432, 16" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=104" shape="circle" coords="608, 480, 16" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=95" shape="circle" coords="650, 475, 15" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=84" shape="circle" coords="679, 423, 14" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=92" shape="circle" coords="736, 435, 13" />
+				</map>
+
+        </div>	
+		<div class="container">
+            <div class="col-12">
+				<h1>Dining Locations</h1>
+			</div>
+		</div>
+
+
+		<div class="container-fluid">
+    		<div class="row">
+				<div class="offset-1 col-10 col-sm-3" id="filter">
+				<div class="panel-body" >
+					<div class="panel-heading">Open Now <input class="pull-right" type="checkbox"></div>
+					<div class="panel-heading">Order Online<input class="pull-right" type="checkbox"></div>
+					<div class="panel-heading">Off-Campus Locations<input class="pull-right" type="checkbox"></div>
+					<div class="panel-heading">On-Campus Locations<input class="pull-right" type="checkbox"></div>
+					<div class="panel-heading">
+							<a data-toggle="collapse" href="#collapse0">
+								<i class="indicator fa fa-caret-down" aria-hidden="true"></i>By Building</a>
+					</div>
+					<div id="collapse0" class="panel-collapse collapse in" >
+						<ul class="list-group">
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											Baker Hall</label></div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											Cohon Center</label></div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											College of Fine Arts</label></div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											Gates Hillman Complex</label></div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											Hamburg</label></div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											Hunt Library</label></div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											Mellon Institute</label></div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											Morewood Gardens</label></div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											Newwell-Simon Atrium</label></div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											Posner Hall</label></div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											Resnik House</label></div>
+							</li>
+							<li class="list-group-item">
+								<div class="checkbox">
+									<label><input type="checkbox" value="">
+											Wean Hall</label></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row" id="buttons">
+						<button class='filter-button'>Clear All</button>
+						<button class='filter-button'>Apply Filter</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- restaurant cards -->
+	<div class="container">
+		<div class="row">
+			<div class = "sidebar open offset-1"></div>
+			<div class="w3-card-4">
+   				<header class="w3-container w3-light-grey"><h1>ROTHBERG'S ROASTERS II</h1></header>
+			    <div class="w3-container">
+			     	<p>Location: <a href="https://www.google.com/maps/place/40%C2%B026'34.8%22N+79%C2%B056'48.7%22W/@40.443,-79.946859,19z/data=!4m5!3m4!1s0x0:0x0!8m2!3d40.443!4d-79.946859">Scott Hall</a><br>Hours: 8:00 AM - 8:00 PM</p>
+			   		<img src="images/Rothberg.jpg" alt="Rothberg’s Roasters II" class="w3-left w3-margin-right">
+			     	<p>Breakfast, lunch, dinner, pizza, sandwiches, soups, fruit, dessert, coffee</p>
+			    </div>
+  			</div>
+
+  			<div class = "sidebar open offset-1"></div>
+			<div class="w3-card-4">
+   				<header class="w3-container w3-light-grey"><h1>HEINZ CAFÉ</h1></header>
+			    <div class="w3-container">
+			     	<p>Location: <a href="https://www.google.com/maps/place/40%C2%B026'39.6%22N+79%C2%B056'42.2%22W/@40.444328,-79.94506,19z/data=!4m5!3m4!1s0x0:0x0!8m2!3d40.444328!4d-79.94506">Hamburg, Lower Level</a><br>Hours: 7:00 AM - 7:00 PM</p>
+			   		<img src="images/Heinz.jpg" alt="Heinz Cafe" class="w3-left w3-margin-right">
+			     	<p>Grab-and-go items, bagels, hummus, baked goods, granola, and yogurt</p>
+			    </div>
+  			</div>
+
+  			<div class = "sidebar open offset-1"></div>
+			<div class="w3-card-4">
+   				<header class="w3-container w3-light-grey"><h1>ROHR CAFÉ</h1></header>
+			    <div class="w3-container">
+			     	<p>Location: <a href="https://www.google.com/maps/place/40°26'36.8%22N+79°56'41.3%22W/@40.443551,-79.944798,19z/data=!4m5!3m4!1s0x0:0x0!8m2!3d40.443551!4d-79.944798">Gates Hillman Complex, Third floor</a><br>Hour: 8:30 AM - 6:00 PM</p>
+			   		<img src="images/Rohr.jpg" alt="Rohr Cafe" class="w3-left w3-margin-right">
+			     	<p>Tazza D'Oro offers free trade coffee, espresso, tea, panini, desserts, pastries
+			     	</p>
+			    </div>
+  			</div>
+
+  			<div class = "sidebar closed offset-1"></div>
+			<div class="w3-card-4">
+   				<header class="w3-container w3-light-grey"><h1>ROHR CAFÉ</h1></header>
+			    <div class="w3-container">
+			     	<p>Location: <a href="https://www.google.com/maps/place/40°26'36.8%22N+79°56'41.3%22W/@40.443551,-79.944798,19z/data=!4m5!3m4!1s0x0:0x0!8m2!3d40.443551!4d-79.944798">Gates Hillman Complex, Third floor</a><br>Hours 7:00 AM - 7:00 PM</p>
+			   		<img src="images/Rohr.jpg" alt="Rohr Cafe" class="w3-left w3-margin-right">
+			     	<p>Tazza D'Oro offers free trade coffee, espresso, tea, panini, desserts, pastries
+			     	</p>
+			    </div>
+  			</div>
+
+
+
+
+
+  		
+			
+  		
+
+			
+	
+
+
+
+
+
+
+
+
+	</main>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="jquery/jquery.min.js"></script>
+	<script src="jquery/jquery.rwdImageMaps.min.js"></script>
+	<script>
+	$(document).ready(function(e) {
+		$('img[usemap]').rwdImageMaps();});</script>
+</body>
+
+
+<!--contact information provided at the bottom-->
+<footer>
+	<br><br><br><br><br><br><br><br>
+</footer>
+</html>
