@@ -1,7 +1,7 @@
 let list;
 $(document).ready(function() {
 	list = new Vue({
-		el: '.location-list',
+		el: '.list',
 		data: {
 			locations: locations,
 			search_term: '',
@@ -30,11 +30,26 @@ $(document).ready(function() {
 							return 0;
 						});
 						break;
-					// case('generational'):
-					// 	locations = locations.sort(function(a, b) {
-					// 		return a.gen - b.gen;
-					// 	});
-					// 	break;
+					case('open'):
+						locations = locations.filter(function(location) {
+							return location.open;
+						});
+						break;
+					case('order'):
+						locations = locations.filter(function(location) {
+							return location.open;
+						});
+						break;
+					case('on campus'):
+						locations = locations.filter(function(location) {
+							return location.oncampus;
+						});
+						break;
+					case('off campus'):
+						locations = locations.filter(function(location) {
+							return !location.oncampus;
+						});
+						break;
 				}
 				return locations;
 			},

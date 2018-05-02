@@ -19,7 +19,7 @@
 <body>
 
 	<header>
-		<p class="logo">CMU Dining Locations</p>
+		<p class="logo">Carnegie Mellon University</p>
 		<ul class="navbar">
 			<li>
 				<a href="index.html">Locations</a>
@@ -33,9 +33,158 @@
 		</ul>
 	</header>
 
+	<h1>Dining Locations</h1>
 
-	<div class="container">
-		
+	<div class="container content map">
+		<div class="col s12">
+			<img class = "cmuMap" src="images/map.jpg" alt="" usemap="#Map" />
+				<map name="Map" id="Map">
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=123" shape="circle" coords="397, 438, 16" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=115" shape="circle" coords="514, 362, 15" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=93" shape="circle" coords="413, 332, 17" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=110" shape="circle" coords="472, 383, 16" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=94" shape="circle" coords="491, 432, 16" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=104" shape="circle" coords="608, 480, 16" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=95" shape="circle" coords="650, 475, 15" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=84" shape="circle" coords="679, 423, 14" />
+				    <area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=92" shape="circle" coords="736, 435, 13" />
+				</map>
+        </div>	
+	</div>
+
+	<div class="container content list">
+		<div class="row specials">
+			<a class="btn col s6" href="https://google.com">Today's Specials</a>
+			<a class="btn col s6" href="https://google.com">Today's Soups</a>
+		</div>
+		<!-- <p>
+			<label>
+				<input type="checkbox" />
+				<span>Baker Hall</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>Cohon Center</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>College of Fine Arts</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>Gates Hillman Complex</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>College of Fine Arts</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>Hamburg</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>Hunt Library</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>Mellon Institute</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>Morewood Gardens</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>Newell-Simon Atrium</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>Posner Hall</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>Resnik House</span>
+			</label>
+	    </p>
+	    <p>
+			<label>
+				<input type="checkbox" />
+				<span>Wean Hall</span>
+			</label>
+	    </p> -->
+
+		<form action="#">
+			<p>
+		      <label>
+		        <input class="with-gap" name="group1" type="radio" checked 
+		        v-on:click="filter_setting = 'alphabetical'"/>
+		        <span>Alphabetical</span>
+		      </label>
+		    </p>
+		    <p>
+		      <label>
+		        <input class="with-gap" name="group1" type="radio"
+		        v-on:click="filter_setting = 'open'"/>
+		        <span>Open Now</span>
+		      </label>
+		    </p>
+		    <p>
+		      <label>
+		        <input class="with-gap" name="group1" type="radio" 
+		        v-on:click="filter_setting = 'order'"/>
+		        <span>Order Online</span>
+		      </label>
+		    </p>
+		    <p>
+		      <label>
+		        <input class="with-gap" name="group1" type="radio" 
+		        v-on:click="filter_setting = 'on campus'"/>
+		        <span>On-Campus Locations</span>
+		      </label>
+		    </p>
+		    <p>
+		      <label>
+		        <input class="with-gap" name="group1" type="radio"  
+		        v-on:click="filter_setting = 'off campus'"/>
+		        <span>Off-Campus Locations</span>
+		      </label>
+		    </p>
+	  	</form>
+
+	  	<form class="col s12">
+	      <div class="row">
+	        <div class="input-field col s12 m6 l4 xl4">
+	          <!-- <i class="material-icons prefix">account_circle</i> -->
+	          <input id="icon_prefix" type="text" class="validate"
+	          v-model="search_term">
+	          <label for="icon_prefix">Search</label>
+	        </div>
+	      </div>
+	    </form>        
+
 		<ul class="location-list">
 			<li v-for="(location, index) in processLocations()">
 				<a href="https://google.com" target="_blank">
@@ -45,8 +194,8 @@
 								<div
 								v-bind:class="{
 									'rgbar':true,
-									'open': location.order,
-									'closed': !location.order
+									'open': location.open,
+									'closed': !location.open
 								}">
 							    </div>
 								<div class="card-content black-text">
@@ -77,6 +226,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script src="jquery/jquery.min.js"></script>
+	<script src="jquery/jquery.rwdImageMaps.min.js"></script>
+	<script>
+	$(document).ready(function(e) {
+		$('img[usemap]').rwdImageMaps();});</script>
     
 	<!-- Compiled and minified JavaScript for Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>

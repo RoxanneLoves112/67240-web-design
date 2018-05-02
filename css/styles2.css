@@ -45,3 +45,48 @@ header, footer {
 	font-size: 12px;
 	padding-top: 60px;
 }
+.btn {
+	background-color: lightgrey !important;
+}
+.row.specials {
+	text-align: center;
+	margin: 20px;
+}
+.row.specials a {
+	font-size: 12px;
+}
+
+/*[type="radio"].with-gap:checked + label::after {
+	background-color: red !important;
+	border-radius: 50% !important;
+	border: 2px solid red !important; 
+}
+
+[type="checkbox"].filled-in:checked.#{$color_name} + label::after {
+        border: 2px solid $color_value;
+        background-color: $color_value;
+}*/
+
+form {
+	padding: 0 20px;
+	margin: 0;
+}
+h1 {
+	font-size: 24px !important;
+	text-align: center;
+}
+.cmuMap {
+	width: 100%;
+	margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
