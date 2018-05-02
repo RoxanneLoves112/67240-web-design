@@ -54,8 +54,8 @@
 
 	<div class="container content list">
 		<div class="row specials">
-			<a class="btn col s6" href="https://google.com">Today's Specials</a>
-			<a class="btn col s6" href="https://google.com">Today's Soups</a>
+			<a class="btn col s6" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=specials">Today's Specials</a>
+			<a class="btn col s6" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=soups">Today's Soups</a>
 		</div>
 		<!-- <p>
 			<label>
@@ -187,7 +187,7 @@
 
 		<ul class="location-list">
 			<li v-for="(location, index) in processLocations()">
-				<a href="https://google.com" target="_blank">
+				<a :href="location.url" target="_blank">
 					<div class="row">
 					    <div class="col s12 m6 l4 xl4">
 							<div class="card white darken-1">
@@ -237,3 +237,14 @@
 </body>
 
 </html>
+
+
+<!-- decrease white space in cards -->
+<!-- change colors and style the headers and stuff -->
+<!-- hover interactivity on map, popup?, 3d option on image, pins, message -->
+<!-- background colors to divide sections of page -->
+<!-- fix specials and soups buttons -->
+
+
+
+

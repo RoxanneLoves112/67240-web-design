@@ -7,6 +7,7 @@ let locations = [
 		open: true,
 		image: false,
 		oncampus: true,
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=123'
 	},
 	{
 		name: "Tazzo D'Oro",
@@ -16,6 +17,7 @@ let locations = [
 		open: true,
 		image: false,
 		oncampus: true,
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=115'
 	},
 	{
 		name: 'Heinz Café',
@@ -25,6 +27,7 @@ let locations = [
 		open: true,
 		image: false,
 		oncampus: true,
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=93'
 	},
 	{
 		name: "iNoodle",
@@ -34,6 +37,7 @@ let locations = [
 		open: true,
 		image: false,
 		oncampus: true,
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=110'
 	},
 	{
 		name: "La Prima Espresso",
@@ -43,6 +47,7 @@ let locations = [
 		open: false,
 		image: false,
 		oncampus: true,
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=94'
 	},
 	{
 		name: "Gingers Express",
@@ -52,6 +57,7 @@ let locations = [
 		open: false,
 		image: false,
 		oncampus: true,
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=104'
 	},
 	{
 		name: "Maggie Murph Café",
@@ -61,6 +67,7 @@ let locations = [
 		open: false,
 		image: false,
 		oncampus: true,
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=95'
 	},
 	{
 		name: "The Zebra Lounge",
@@ -70,6 +77,7 @@ let locations = [
 		open: false,
 		image: false,
 		oncampus: true,
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=84'
 	},
 	{
 		name: "The Exchange",
@@ -79,6 +87,7 @@ let locations = [
 		open: false,
 		image: false,
 		oncampus: true,
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=92'
 	},
 	{
 		name: "Subway",
@@ -88,6 +97,7 @@ let locations = [
 		open: true,
 		image: false,
 		oncampus: false,
+		url: 'http://www.subway.com/'
 	},
 ];
 
