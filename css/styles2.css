@@ -18,7 +18,6 @@ body {
 	box-sizing: border-box;
 }
 .card .card-title {
-	font-family: "Georgia";
 	margin-top:-10px;
 	font-size: 20px !important;
 }
@@ -29,9 +28,11 @@ body {
 	height: 100%;
 	width: 20px;
 }
+
 .rgbar.open {
 	background-color: rgb(52,101,7);
 }
+
 .rgbar.closed {
 	background-color: rgb(165,0,14);
 }
@@ -46,14 +47,18 @@ nav {
 	background-color:rgb(246,247,249) !important;
 }
 
-.sidenav-trigger{
-	color: rgb(189,0,4);
-}
-
 nav ul li a{
 	display: inline;
 	padding: 20px;
 	color:rgb(18,134,242);
+}
+
+.sidenav a{
+	font-size:14px !important;
+}
+
+.sidenav-trigger{
+	color: rgb(189,0,4);
 }
 
 .logo {
@@ -63,6 +68,11 @@ nav ul li a{
 	padding-left:20px;
 	margin: 0;
 	font-size: 22px;
+}
+
+#menu {
+	width:18px;
+	margin-top:22px;
 }
 
 .copyright {
@@ -96,7 +106,6 @@ form {
 	margin: 0;
 }
 h1 {
-	font-family: "Georgia";
 	padding-top: 25px;
 	margin-bottom: 15px !important;
 	font-size: 22px !important;
@@ -106,7 +115,6 @@ h1 {
 	width: 100%;
 	margin: 15px 0;
 }
-
 
 
 
