@@ -58,7 +58,7 @@ header, footer {
 	padding-top: 60px;
 }
 .btn {
-	background-color: lightgrey !important;
+	background-color: rgb(193,193,193) !important;
 }
 .row.specials {
 	text-align: center;
