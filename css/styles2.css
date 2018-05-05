@@ -37,10 +37,14 @@ body {
 	background-color: rgb(165,0,14);
 }
 
-header, footer {
+header {
 	background-color: white;
 	width: 100%;
 	text-align: center;
+}
+
+footer {
+	background-color: rgb(180,180,180) !important;
 }
 
 nav {
@@ -71,10 +75,6 @@ nav ul li a{
 	margin-top:22px;
 }
 
-.copyright {
-	font-size: 12px;
-	padding-top: 60px;
-}
 .btn {
 	background-color: rgb(193,193,193) !important;
 }
@@ -106,6 +106,10 @@ h1 {
 	margin-bottom: 15px !important;
 	font-size: 22px !important;
 	text-align: center;
+}
+.icon {
+	width:30px;
+	margin-right:3px;
 }
 .cmuMap {
 	width: 100%;
