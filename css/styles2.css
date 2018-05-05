@@ -48,6 +48,7 @@ footer {
 	background-color: rgb(180,180,180) !important;
 }
 
+
 nav {
 	background-color:rgb(246,247,249) !important;
 }
@@ -57,6 +58,7 @@ nav ul li a{
 	padding: 20px;
 	color:rgb(18,134,242);
 }
+
 
 .sidenav-trigger{
 	color: rgb(189,0,4);
@@ -108,14 +110,13 @@ h1 {
 	font-size: 22px !important;
 	text-align: center;
 }
+
 .icon {
 	width:30px;
 	margin-right:3px;
 }
+
 .cmuMap {
 	width: 100%;
 	margin: 15px 0;
 }
-
-
-
