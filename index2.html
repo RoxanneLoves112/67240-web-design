@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/styles2.css">
     <!-- Compiled and minified CSS for Materialize-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">            
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">   
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">         
     <!-- Linked scripts -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -19,20 +20,27 @@
 <body>
 
 	<header>
-		<p class="logo">Carnegie Mellon University</p>
-		<ul class="navbar">
-			<li>
-				<a href="index.html">Locations</a>
-			</li>
-			<li>
-				<a href="https://get.cbord.com/cmu/full/prelogin.php">Get Funds</a>
-			</li>
-			<li>
-				<a href="https://app.mynutritioncalculator.net/cmu/">Nutrition Calculator</a>
-			</li>
-		</ul>
+		<div class="navbar-fixed">
+			<nav>
+			    <div class="nav-wrapper">
+			      <a href="https://www.cmu.edu/" class="logo left">Carnegie Mellon University</a>
+			      <a href="#" data-target="mobile-demo" class="right sidenav-trigger"><img id="menu" src="images/menu.jpg"></a>
+			      <ul class="right hide-on-med-and-down">
+			        <li><a href="index.html">Locations</a></li>
+			        <li><a href="https://get.cbord.com/cmu/full/prelogin.php">Get Funds</a></li>
+			        <li><a href="https://app.mynutritioncalculator.net/cmu/">Nutrition Calculator</a></li>
+			      </ul>
+			    </div>
+	  		</nav>
+  		</div>
+	  	<ul class="sidenav" id="mobile-demo">
+		    <li><a href="index.html">Locations</a></li>
+			<li><a href="https://get.cbord.com/cmu/full/prelogin.php">Get Funds</a></li>
+			<li><a href="https://app.mynutritioncalculator.net/cmu/">Nutrition Calculator</a></li>
+	  	</ul>
 	</header>
-
+	
+	<main>
 	<h1>Dining Locations</h1>
 
 	<div class="container content map">
@@ -214,13 +222,30 @@
 		</ul>        
 
 	</div>
+	</main>
 
-
-	<footer>
-		
-		<div class="copyright">&copy; Mimi, Roxanne, Malik</div>
-
-	</footer>
+	<footer class="page-footer">
+         	<div class="container">
+            <div class="row">
+              <div class="col l6 s6">
+                <h5 class="white-text">Contact Us</h5>
+                <p class="grey-text text-lighten-4">Residence on Fifth<br>4700 Fifth Avenue<br>Pittsburgh, PA 15213<br>(412) 268-2139<br><a href="mailto:dining@andrew.cmu.edu">dining@andrew.cmu.edu</a></p>
+              </div>
+              <div class="col l4 offset-l2 s6">
+                <h5 class="white-text">Links</h5>
+                  <a href="https://www.facebook.com/cmudining"><img class="icon" src="images/facebook.jpg"></a>
+                  <a href="https://www.instagram.com/cmudining/"><img class="icon" src="images/camera.jpg"></a>
+                  <a href="https://twitter.com/diningatcmu"><img class="icon" src="images/twitter.jpg"></a>
+                  <a href="https://cmustudentaffairs.wordpress.com/category/dining-services/"><img class="icon" src="images/web.jpg"></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            &copy; Mimi, Roxanne, Malik
+            </div>
+          </div>
+        </footer>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
