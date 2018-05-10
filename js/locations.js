@@ -402,6 +402,7 @@ let locations = [
 		location_description: "Morewood Gardens, Lower Level",
 		location: 'Morewood Gardens',
 		open: true,
+		order_online: true,
 		image: false,
 		on_campus: true,
 		url: 'https://google.com'

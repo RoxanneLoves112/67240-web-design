@@ -86,9 +86,6 @@ body {
 	margin: 0;
 	list-style: none;
 }
-.browser-locations .filter-locations ul ul {
-
-}
 .browser-locations .filter-locations > ul {
 	border-top: solid 1px var(--main-border-color);
 }
@@ -241,25 +238,99 @@ body {
 
 
 
+.menu-system .navbar {
+	overflow: scroll;
+	position: fixed;
+	z-index: 2;
+	margin: 0;
+	width: 80vw; height: 100vh;
+	top: 0;
+	
+	right: 0vw;
+	background-color: var(--secondary-background-color);
+	border-left: solid 1px var(--main-border-color);
+
+	transition: all var(--short-transition);
+	-webkit-transition: all var(--short-transition);
+}
+.menu-system .navbar.hide-it {
+	transform: translateX(+100%);
+	-webkit-transform: translateX(+100%);
+}
+.menu-system .underlay {
+	visibility: visible;
+	opacity: 1;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100vw; height: 100vh;
+	background-color: rgba(0, 0, 0, 0.3);
+
+	transition: all var(--short-transition);
+	-webkit-transition: all var(--short-transition);
+}
+.menu-system .underlay.hide-it {
+	visibility: hidden;
+	opacity: 0;
+}
+.menu-system .navbar ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	border-top: solid 1px var(--main-border-color)
+}
+.menu-system .navbar li {
+	height: 50px;
+	padding-left: 10px;
+	border-bottom: solid 1px var(--main-border-color);
+	line-height: 50px;
+	font-size: 18px;
+}
+.menu-system .navbar li a {
+	display: inline-block;
+	width: 100%;
+}
 
 
-
-.cmu.logo a, .navbar a, .navbar {
+.cmu.logo a, .dining.logo a, .navbar a, .navbar {
 	list-style: none;
 	text-decoration: none;
 	color: #000;
 	padding: 0;
 }
-header {
+header, footer {
+	padding-bottom: 15px;
+	background-color: #fff;
+	position: relative;
+}
+footer {
+	padding-top: 15px;
 	text-align: center;
 }
-.cmu.logo {
-	font-family: serif;
-	font-size: 24px;
-	padding-top: 20px;
+header {
+	height: 51px;
 }
-.cmu.logo a {
+.cmu {
+	background-image: url('../images/cmu-logo.png');
+	position: absolute;
+	left: 15px;
+    top: calc(50% - 25px);
+    width: 275px;
+    height: 50px;
+}
+.dining.icon a {
 	color: rgb(189,0,4);
 }
-
+.dining.icon {
+	font-size: 20px;
+}
+.menu.icon {
+	background-image: url('../images/menu.svg');
+	position: absolute;
+	right: 15px;
+    top: calc(50% - 12px);
+	width: 24px;
+    height: 24px;
+}
 

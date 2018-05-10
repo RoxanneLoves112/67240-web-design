@@ -1,7 +1,5 @@
 let locations_list;
 $(document).ready(function() {
-	// $('.sidenav').sidenav({ 
-	// 	edge:'right'});
 	locations_list = new Vue({
 		el: '.container',
 		data: {
@@ -110,4 +108,25 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+	menu = new Vue({
+		el: '.menu-system',
+		data: {
+			menu_open: false
+		},
+		methods: {
+			redirect: function(url) {
+				window.location = url;
+			}
+		}
+	});
+
+
+
 });
+
+
+
+
+
+

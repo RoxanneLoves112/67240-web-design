@@ -18,16 +18,29 @@
 
 
 <body>
-	<header>
-		<div class="cmu logo">
-		<a href="https://www.cmu.edu/" class="">Carnegie Mellon University</a>
-		</div>
-			<ul class="navbar">
-				<li><a href="index.html">Locations</a></li>
-				<li><a href="https://get.cbord.com/cmu/full/prelogin.php">Get Funds</a></li>
-				<li><a href="https://app.mynutritioncalculator.net/cmu/">Nutrition Calculator</a></li>
-			</ul>
-	</header>
+	<div class="menu-system">
+		<header>
+			<span class="icon cmu" v-on:click="redirect('https://cmu.edu/')"></span>
+			<!-- <div class="dining logo">
+			<a href="https://www.cmu.edu/dining/" class="">Dining Services</a>
+			</div> -->
+			<span class="icon menu" v-on:click="menu_open = !menu_open">
+					
+			</span>
+		</header>
+		<div
+		v-bind:class="{ 'hide-it': !menu_open }"
+		v-on:click="menu_open = !menu_open"
+		class="menu underlay"></div>
+		<ul 
+		class="navbar"
+		v-bind:class="{ 'hide-it': !menu_open }">
+			<li><a href="https://www.cmu.edu/dining/">Dining Services Home</a></li>
+			<li><a href="index.html">Locations</a></li>
+			<li><a href="https://get.cbord.com/cmu/full/prelogin.php">Get Funds</a></li>
+			<li><a href="https://app.mynutritioncalculator.net/cmu/">Nutrition Calculator</a></li>
+		</ul>
+	</div>
 
 	<!-- location browser -->
 	<div class="browser-locations">
@@ -90,7 +103,7 @@
 					</li>
 				</ul>
 			</form>
-			<form class="query-locations">
+			<div class="query-locations">
 				<span
 				class="icon icon-filter"
 				v-on:click="filtering = !filtering"></span>
@@ -99,7 +112,7 @@
 					<input class="search" placeholder="Search" v-model="search_term">
 					<span class="icon icon-search"></span>
 				</fieldset>
-			</form>
+			</div>
 			<!-- location List -->
 			<ul class="list-locations">
 				<li 
@@ -119,6 +132,17 @@
 			</ul>
 		</div>
 	</div>
+	<footer>
+		<h2>
+			Contact Us
+		</h2>
+		<p>
+			Residence on Fifth<br>4700 Fifth Avenue<br>Pittsburgh, PA 15213<br>(412) 268-2139<br><a href="mailto:dining@andrew.cmu.edu">dining@andrew.cmu.edu</a>
+		</p>
+		<p>
+        &copy; Mimi, Roxanne, Malik
+        </p>
+    </footer>
 	<script src="jquery/jquery.min.js"></script>
 	<script src="jquery/jquery.rwdImageMaps.min.js"></script>
 	<script>
