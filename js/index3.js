@@ -24,7 +24,8 @@ $(document).ready(function() {
 					'Posner Hall': true,
 					'Resnik House': true,
 					'Wean Hall': true,
-					'Scott Hall': true
+					'Scott Hall': true,
+					'Software Engineering Institute': true
 				},
 				off_campus: {
 					'Oakland': true,
