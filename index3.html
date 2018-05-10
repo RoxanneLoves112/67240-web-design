@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/styles3.css">
+	<!-- PureCSS-->
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">         
+	<!-- Linked scripts -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="js/locations.js"></script>
+	<script src="js/index3.js"></script>
+
+	<title>CMU Dining Locations</title>
+</head>
+
+
+<body>
+	<header>
+		<div class="cmu logo">
+		<a href="https://www.cmu.edu/" class="">Carnegie Mellon University</a>
+		</div>
+			<ul class="navbar">
+				<li><a href="index.html">Locations</a></li>
+				<li><a href="https://get.cbord.com/cmu/full/prelogin.php">Get Funds</a></li>
+				<li><a href="https://app.mynutritioncalculator.net/cmu/">Nutrition Calculator</a></li>
+			</ul>
+	</header>
+
+	<!-- location browser -->
+	<div class="browser-locations">
+		<!-- Map -->
+		<div class="map-locations">
+			<img class="cmu-map" src="images/map.jpg" alt="" usemap="#Map" />
+				<map name="Map" id="Map">
+					<area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=123" shape="circle" coords="397, 438, 16" />
+					<area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=115" shape="circle" coords="514, 362, 15" />
+					<area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=93" shape="circle" coords="413, 332, 17" />
+					<area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=110" shape="circle" coords="472, 383, 16" />
+					<area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=94" shape="circle" coords="491, 432, 16" />
+					<area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=104" shape="circle" coords="608, 480, 16" />
+					<area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=95" shape="circle" coords="650, 475, 15" />
+					<area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=84" shape="circle" coords="679, 423, 14" />
+					<area alt="" title="" href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=92" shape="circle" coords="736, 435, 13" />
+				</map>
+		</div>
+		<div class="container container-large">
+			<!-- Filters form -->
+			<div
+			v-bind:class="{ 'hide-it': !filtering }"
+			class="mobile underlay"
+			v-on:click="filtering = !filtering"></div>
+			<form
+			v-bind:class="{ 'hide-it': !filtering }"
+			class="filter-locations">
+				<ul>
+					<li v-for="setting in Object.keys(filter_settings)">
+						<div class="setting">
+							<!-- normal checkbo -->
+							<input
+							type="checkbox"
+							v-if="typeof filter_settings[setting] == 'boolean'"
+							v-model="filter_settings[setting]">
+							<!-- subsettings available checkbox -->
+							<input
+							type="checkbox"
+							v-if="typeof filter_settings[setting] == 'object'"
+							v-bind:checked="Object.values(filter_settings[setting]).filter(l => l).length ? true : false"
+							v-on:click="toggleSubsettings(setting)">{{ setting.replace('_', ' ') }}
+							<span
+							v-if="typeof filter_settings[setting] == 'object'"
+							class="icon icon-downarrow"
+							v-on:click="toggleShowSubsettings(setting)"></span>
+						</div>
+						<ul
+						v-if="typeof filter_settings[setting] == 'object'"
+						v-bind:class="setting"
+						class="list-subsetting"
+						style="display: none;">
+							<li v-for="subsetting in Object.keys(filter_settings[setting])">
+								<div class="subsetting">
+									<input
+									type="checkbox"
+									v-model="filter_settings[setting][subsetting]">{{ subsetting }}
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</form>
+			<form class="query-locations">
+				<span
+				class="icon icon-filter"
+				v-on:click="filtering = !filtering"></span>
+				<!-- Search bar -->
+				<fieldset class="search-locations">
+					<input class="search" placeholder="Search" v-model="search_term">
+					<span class="icon icon-search"></span>
+				</fieldset>
+			</form>
+			<!-- location List -->
+			<ul class="list-locations">
+				<li 
+				v-for="(location, index) in processLocations()"
+				v-bind:key="location.name"
+				v-on:click="redirect(location.url)">
+					<div class="headers">
+						<div
+						class="status-bar"
+						v-bind:class="location.open ? 'open' : 'closed'"></div>
+						<h1 class="header">{{ location.name }}</h1>
+						<h2 class="header">{{ location.open ? "" : "Closed ∙ " }}{{ location.hours }}</h2>
+						<h2 class="header">{{ location.location_description || location.location }}</h2>
+					</div>
+					<p class="description">{{ location.desc }}</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="jquery/jquery.min.js"></script>
+	<script src="jquery/jquery.rwdImageMaps.min.js"></script>
+	<script>
+	$(document).ready(function(e) {
+		$('img[usemap]').rwdImageMaps();});</script>
+</body>
+
+</html>

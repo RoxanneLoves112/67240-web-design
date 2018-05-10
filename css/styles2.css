@@ -42,6 +42,7 @@ header {
 	background-color: white;
 	width: 100%;
 	text-align: center;
+	box-shadow: none;
 }
 
 footer {
@@ -51,14 +52,23 @@ footer {
 
 nav {
 	background-color:rgb(246,247,249) !important;
+	box-shadow: none;
+	border-bottom: solid 1px #ddd;
 }
 
-nav ul li a{
+nav ul li a {
 	display: inline;
 	padding: 20px;
-	color:rgb(18,134,242);
+	/*color:rgb(18,134,242) !important;*/
+	color: #000000;
 }
-
+.sidenav {
+	box-shadow: none;
+	border-left: solid 1px #ddd;
+}
+.sidenav-overlay {
+	background-color: rgba(0, 0, 0, 0.3);
+}
 
 .sidenav-trigger{
 	color: rgb(189,0,4);
@@ -89,7 +99,7 @@ nav ul li a{
 	font-size: 12px;
 }
 
-/*[type="radio"].with-gap:checked + label::after {
+[type="radio"].with-gap:checked + label::after {
 	background-color: red !important;
 	border-radius: 50% !important;
 	border: 2px solid red !important; 
@@ -98,7 +108,7 @@ nav ul li a{
 [type="checkbox"].filled-in:checked.#{$color_name} + label::after {
         border: 2px solid $color_value;
         background-color: $color_value;
-}*/
+}
 
 form {
 	padding: 0 20px;
@@ -115,7 +125,7 @@ h1 {
 	width:30px;
 	margin-right:3px;
 }
-
+.container 
 .cmuMap {
 	width: 100%;
 	margin: 15px 0;

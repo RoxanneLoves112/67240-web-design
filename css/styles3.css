@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400');
+/* Core Styles */
+:root {
+	--main-background-color: #f0f2f5;
+	--secondary-background-color: #fff;
+
+	--main-border-color: #ddd;
+
+	--short-transition: 0.15s ease;
+	--long-transition: 0.7s ease;
+}
+body {
+	overflow: auto;
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	background-color: var(--main-background-color);
+}
+.header {
+	font-family: 'Open Sans', sans-serif;
+}
+.container {
+	position: relative;
+	margin: 0 auto;
+}
+.container-large {
+	width: 90%;
+}
+.icon {
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Test Styles */
+/* Locations Browser */
+.browser-locations {
+	width: 100vw;
+	white-space: nowrap;
+}
+.browser-locations .map-locations {
+	width: 100%;
+}
+.browser-locations .map-locations .cmu-map {
+	width: 100%;
+	user-select: none;
+}
+.browser-locations .filter-locations {
+	overflow: scroll;
+	position: fixed;
+	z-index: 2;
+	width: 80vw; height: 100vh;
+	top: 0;
+	
+	left: 0vw;
+	background-color: var(--secondary-background-color);
+	text-transform: capitalize;
+	border-right: solid 1px var(--main-border-color);
+
+	transition: all var(--short-transition);
+	-webkit-transition: all var(--short-transition);
+}
+.browser-locations .filter-locations.hide-it {
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+}
+.browser-locations .underlay {
+	visibility: visible;
+	opacity: 1;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100vw; height: 100vh;
+	background-color: rgba(0, 0, 0, 0.3);
+
+	transition: all var(--short-transition);
+	-webkit-transition: all var(--short-transition);
+}
+.browser-locations .underlay.hide-it {
+	visibility: hidden;
+	opacity: 0;
+}
+.browser-locations .filter-locations ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.browser-locations .filter-locations ul ul {
+
+}
+.browser-locations .filter-locations > ul {
+	border-top: solid 1px var(--main-border-color);
+}
+.browser-locations .filter-locations > ul > li {
+	overflow: hidden;
+}
+.browser-locations .filter-locations > ul > li .list-subsetting.active {
+}
+.browser-locations .filter-locations > ul > li .list-subsetting {
+}
+.browser-locations .filter-locations > ul > li .subsetting {
+	overflow: hidden;
+}
+.browser-locations .filter-locations .setting,
+.browser-locations .filter-locations .subsetting {
+	position: relative;
+	height: 50px;
+
+	border-bottom: solid 1px var(--main-border-color);
+	line-height: 50px;
+	font-size: 18px;
+}
+.browser-locations .filter-locations .setting {
+	padding-left: 15px;
+}
+.browser-locations .filter-locations .subsetting {
+	padding-left: 40px;
+	background-color: var(--main-background-color);
+}
+.browser-locations .filter-locations .setting .icon-downarrow {
+	position: absolute;
+	top: calc(50% - 12px);
+	right: 15px;
+	width: 40%; height: 24px;
+	background-image: url('../images/downarrow-yellow.svg');
+	background-size: 20%;
+	background-position: right;
+
+	cursor: pointer;
+}
+.browser-locations .filter-locations .setting input,
+.browser-locations .filter-locations .subsetting input {
+	margin-right: 10px;
+}
+.browser-locations .query-locations {
+	position: relative;
+	width: 100%; height: 36px;
+	margin-top: 10px;
+}
+.browser-locations .query-locations .icon-filter {
+	position: absolute;
+	top: calc(50% - 14px); left: 0;
+	width: 28px; height: 28px;
+
+	background-image: url('../images/filter.svg');
+	cursor: pointer;
+}
+.browser-locations .query-locations .search-locations {
+	position: absolute;
+	top: 0; right: 0;
+	display: inline-block;
+	width: calc(100% - 48px);
+	height: 100%;
+	padding: 5px 5px 5px 10px;
+	margin: 0;
+	box-sizing: border-box;
+
+	background-color: #fff;
+	border-radius: 4px;
+	border: solid 1px #ddd;
+}
+.browser-locations .query-locations .search-locations .search {
+	width: calc(100% - 36px); height: 100%;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+.browser-locations .query-locations .search-locations .search:focus {
+	border: none;
+	outline: none;
+}
+.browser-locations .query-locations .search-locations .icon-search {
+	position: absolute;
+	top: calc(50% - 10px); right: 8px;
+	width: 20px; height: 20px;
+	background-image: url('../images/search.svg');
+}
+.browser-locations .list-locations {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-top: 10px;
+	list-style: none;
+	min-height: 300px;
+}
+.browser-locations .list-locations li {
+	position: relative;
+	width: 100%; height: auto;
+	margin: 20px auto;
+	padding: 15px 15px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: solid 1px #ddd;
+
+	background-color: #fff;
+	transition: filter 0.15s ease;
+	-webkit-transition: filter 0.15s ease;
+}
+.browser-locations .list-locations li:hover {
+	filter: brightness(0.9);
+}
+.browser-locations .list-locations li .headers {
+	position: relative;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+.browser-locations .list-locations li .headers .status-bar {
+	position: absolute;
+	left: 1.5px;
+	width: 3px; height: 100%;
+	border-radius: 1.5px;
+	background-color: #7cc05a;
+}
+.browser-locations .list-locations li .headers .status-bar.closed {
+	background-color: #ff6d7d;
+}
+.browser-locations .list-locations li .header {
+	margin: 0;
+	letter-spacing: 0.7px;
+}
+.browser-locations .list-locations li h1.header {
+	font-size: 1.5em;
+}
+.browser-locations .list-locations li h2.header {
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 1em;
+}
+.browser-locations .list-locations li h2.header:nth-of-type(1) {
+	margin-top: 6px;
+}
+.browser-locations .list-locations li a {
+	color: #000;
+	text-decoration: none;
+}
+.browser-locations .list-locations li p {
+	margin: 0;
+	margin-top: 12px;
+	white-space: normal;
+}
+
+
+
+
+
+
+.cmu.logo a, .navbar a, .navbar {
+	list-style: none;
+	text-decoration: none;
+	color: #000;
+	padding: 0;
+}
+header {
+	text-align: center;
+}
+.cmu.logo {
+	font-family: serif;
+	font-size: 24px;
+	padding-top: 20px;
+}
+.cmu.logo a {
+	color: rgb(189,0,4);
+}
+
+

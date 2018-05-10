@@ -1,8 +1,5 @@
 let list;
 $(document).ready(function() {
-	$('.sidenav').sidenav({ 
-		edge:'right'})
-	
 	list = new Vue({
 		el: '.list',
 		data: {
