@@ -365,7 +365,7 @@ header {
     height: 24px;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 601px) {
 	/* For tablet */
     body {
         /*background-color: lightblue;*/
@@ -383,6 +383,7 @@ header {
 	}
 	.browser-locations .list-locations {
 		width: 100%;
+		padding-bottom: 15px;
 	}
 	.browser-locations .list-locations li {
 		max-width: 49%;
