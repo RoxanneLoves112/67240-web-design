@@ -15,7 +15,7 @@ let locations = [
 		desc: "Waffles, oatmeal, breakfast sandwiches, fruit, and coffee",
 		hours: "11:00 AM - 2:30 PM",
 		location: 'Resnik House',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=89'
@@ -35,8 +35,7 @@ let locations = [
 		desc: 'Grilled-to-open burgers, fries, chicken tenders and melts, fruit, salads',
 		hours: '10:30 AM - 9:00 PM',
 		location_description: 'Cohon Center, 2nd Floor',
-
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=109'
@@ -46,7 +45,7 @@ let locations = [
 		desc: 'Fine dining meals offered on Tuesdays and Thursdays',
 		hours: '5:00 PM - 9:00 PM',
 		location: 'Resnik House',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=83'
@@ -57,7 +56,7 @@ let locations = [
 		hours: '10:30 AM - 4:00 PM',
 		location_description: 'Cohon Center, 2nd Floor',
 		location: 'Cohon Center',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=86'
@@ -79,7 +78,7 @@ let locations = [
 		hours: '10:30 AM - 9:00 PM',
 		location_description: 'Cohon Center, 2nd Floor',
 		location: 'Cohon Center',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=5'
@@ -90,7 +89,7 @@ let locations = [
 		hours: "8:00 AM - 8:00 PM",
 		location_description: 'Posner Hall (Tepper)',
 		location: 'Posner Hall',
-		open: false,
+		open: true,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=92'
@@ -111,7 +110,7 @@ let locations = [
 		hours: "10:30 AM - 10:00 PM",
 		location_description: 'Cohon Center, Ground Floor',
 		location: 'Cohon Center',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=91'
@@ -121,7 +120,7 @@ let locations = [
 		desc: "100% vegan, plant-based cuisine, choose from our chef’s signature sandwiches or build your own",
 		hours: "11:00 AM - 9:00 PM",
 		location: 'Resnik House',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=130'
@@ -141,7 +140,7 @@ let locations = [
 		desc: "Lean proteins and super food greens... grilled!",
 		hours: "11:00 AM - 2:30 PM",
 		location: 'Resnik House',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=121'
@@ -182,7 +181,7 @@ let locations = [
 		desc: "Choose from 3 types of mac n' cheese and add your stir-ins and toppings to create your own dish",
 		hours: "5:00 PM - 9:00 PM",
 		location: 'Resnik House',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=131'
@@ -202,7 +201,7 @@ let locations = [
 		desc: "Made-to-open and prepackaged sushi and Pan-Asian cuisine",
 		hours: "11:00 AM - 9:00 PM",
 		location: 'Resnik House',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=97'
@@ -213,7 +212,7 @@ let locations = [
 		hours: "10:30 AM - 6:30 PM",
 		location_description: 'Cohon Center, 2nd Floor',
 		location: 'Cohon Center',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=127'
@@ -224,7 +223,7 @@ let locations = [
 		hours: "10:30 AM - 9:00 PM",
 		location_description: 'Cohon Center, 2nd Floor',
 		location: 'Cohon Center',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=99'
@@ -234,7 +233,7 @@ let locations = [
 		desc: "Kosher, falafel, hummus, shawarms, salads, grilled meats, vegan/vegetarian",
 		hours: "11:00 AM = 9:00 PM",
 		location: "Resnik House",
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=76'
@@ -245,7 +244,7 @@ let locations = [
 		hours: "10:30 AM - 4:00 PM",
 		location_description: 'Cohon Center, 2nd Floor',
 		location: 'Cohon Center',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=129'
@@ -256,7 +255,7 @@ let locations = [
 		hours: "10:30 AM - 9:00 PM",
 		location_description: 'Cohon Center, 2nd Floor',
 		location: 'Cohon Center',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=100'
@@ -308,7 +307,7 @@ let locations = [
 		desc: "Beef, turkey, black bean, portabella burgers; chicken sandwiches, steak, fish",
 		hours: "11:00 AM - 9:00 PM",
 		location: 'Resnik House',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=107'
@@ -319,7 +318,7 @@ let locations = [
 		hours: "10:30 AM - 9:00 PM",
 		location_description: 'Cohon Center, 2nd Floor',
 		location: 'Cohon Center',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=106'
@@ -339,7 +338,7 @@ let locations = [
 		desc: "Made-to-open stir fry bowls",
 		hours: "5:00 PM - 9:00 PM",
 		location: 'Resnik House',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=116'
@@ -349,7 +348,7 @@ let locations = [
 		desc: "Home-style chicken, turkey, pork, beef, seafood, and vegetarian entrées",
 		hours: "5:00 PM - 9:00 PM",
 		location: 'Resnik House',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=119'
@@ -360,7 +359,7 @@ let locations = [
 		hours: "11:00 AM - 7:30 PM",
 		location_description: 'Cohon Center, Legacy Plaza',
 		location: 'Cohon Center',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=82'
@@ -370,7 +369,7 @@ let locations = [
 		desc: "Oven-fired pizza, baked pasta, and salads",
 		hours: "11:00 AM - 11:00 PM",
 		location: "Resnik House",
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=117'
@@ -380,7 +379,7 @@ let locations = [
 		desc: "Authentic Indian cuisine",
 		hours: "11:00 AM - 9:00 PM",
 		location: "Resnik House",
-		open: true,
+		open: false,
 		image: false,
 		on_campus: true,
 		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=114'
@@ -445,7 +444,7 @@ let locations = [
 		hours: "10:00 AM - 3:00 AM",
 		location_description: "4740 Baum Blvd",
 		location: 'Shadyside',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: false,
 		url: 'http://www.vocellipizza.com/'
@@ -467,7 +466,7 @@ let locations = [
 		hours: "11:00 AM - 8:00 PM",
 		location_description: "305 South Craig Street",
 		location: 'Oakland',
-		open: true,
+		open: false,
 		image: false,
 		on_campus: false,
 		url: 'http://www.eatuniquecafe.com/'

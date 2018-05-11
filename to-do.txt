@@ -17,3 +17,6 @@
 change availability
 
 <!-- decrease white space in cards -->
+
+show what's being filtered
+change availability
