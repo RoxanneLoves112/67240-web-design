@@ -8,7 +8,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=113'
 	},
 	{
 		name: "Breakfast Express",
@@ -18,7 +18,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=89'
 	},
 	{
 		name: "Carnegie Mellon Cafe",
@@ -28,7 +28,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=88'
 	},
 	{
 		name: "Chef's Table",
@@ -39,7 +39,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=109'
 	},
 	{
 		name: "City Grill",
@@ -49,7 +49,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=83'
 	},
 	{
 		name: "Downtown Deli",
@@ -60,7 +60,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=86'
 	},
 	{
 		name: "Entropy+",
@@ -71,7 +71,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=103'
 	},
 	{
 		name: "Evgefstos",
@@ -82,7 +82,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=5'
 	},
 	{
 		name: "The Exchange",
@@ -93,7 +93,7 @@ let locations = [
 		open: false,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=92'
 	},
 	{
 		name: "Fresh Select",
@@ -103,7 +103,7 @@ let locations = [
 		open: false,
 		image: false,
 		on_campus: true,
-		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=92'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=111'
 	},
 	{
 		name: "El Gallo De Oro",
@@ -114,7 +114,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=91'
 	},
 	{
 		name: "Garden Bistro",
@@ -124,7 +124,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=130'
 	},
 	{
 		name: "Gingers Express",
@@ -144,7 +144,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=121'
 	},
 	{
 		name: 'Heinz Café',
@@ -185,7 +185,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=131'
 	},
 	{
 		name: "Maggie Murph Café",
@@ -205,7 +205,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=97'
 	},
 	{
 		name: "Nourish",
@@ -216,7 +216,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=127'
 	},
 	{
 		name: "Pasta Villaggio",
@@ -227,7 +227,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=99'
 	},
 	{
 		name: "The Pomegranate",
@@ -237,7 +237,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=76'
 	},
 	{
 		name: "Ramen Bowl",
@@ -248,7 +248,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=129'
 	},
 	{
 		name: "Rice Bowl",
@@ -259,7 +259,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=100'
 	},
 	{
 		name: "Rohr Cafe",
@@ -270,7 +270,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=115'
 	},
 	{
 		name: "Rothberg's Roasters",
@@ -291,7 +291,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=108'
 	},
 	{
 		name: "Seiber Cafe",
@@ -301,7 +301,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=120'
 	},
 	{
 		name: "Spice It Up Grill",
@@ -311,7 +311,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=107'
 	},
 	{
 		name: "Spinning Salads",
@@ -322,7 +322,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=106'
 	},
 	{
 		name: "Stephanie's",
@@ -332,7 +332,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=118'
 	},
 	{
 		name: "Stir Crazy",
@@ -342,7 +342,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=116'
 	},
 	{
 		name: "Take Comfort",
@@ -352,7 +352,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=119'
 	},
 	{
 		name: "Tartan Express",
@@ -363,7 +363,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=82'
 	},
 	{
 		name: "Tartan's Pizza",
@@ -373,7 +373,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=117'
 	},
 	{
 		name: "Taste of India",
@@ -383,7 +383,7 @@ let locations = [
 		open: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=114'
 	},
 	{
 		name: "Tazzo D'Oro",
@@ -405,7 +405,7 @@ let locations = [
 		order_online: true,
 		image: false,
 		on_campus: true,
-		url: 'https://google.com'
+		url: 'https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=112'
 	},
 	{
 		name: "The Zebra Lounge",
@@ -427,5 +427,49 @@ let locations = [
 		image: false,
 		on_campus: false,
 		url: 'http://www.subway.com/'
+	}
+	{
+		name: "Eat N' Park",
+		desc: "Family restaurants serving breakfast, lunch, and dinner to guests",
+		hours: "6:00 AM - 3:00 AM",
+		location_description: "1816 Murray Ave",
+		location: 'Squirrel Hill',
+		open: true,
+		image: false,
+		on_campus: false,
+		url: 'http://www.eatnpark.com/'
+	}
+	{
+		name: "Vocelli Pizza",
+		desc: "Build your own sandwiches",
+		hours: "10:00 AM - 3:00 AM",
+		location_description: "4740 Baum Blvd",
+		location: 'Shadyside',
+		open: true,
+		image: false,
+		on_campus: false,
+		url: 'http://www.vocellipizza.com/'
+	}
+	{
+		name: "Quiznos",
+		desc: "Build your own sandwiches",
+		hours: "8:00 AM - 9:00 PM",
+		location_description: "300 South Craig Street",
+		location: 'Oakland',
+		open: true,
+		image: false,
+		on_campus: false,
+		url: 'http://www.quiznos.com/Home.aspx'
+	}
+	{
+		name: "Eat Unique",
+		desc: "Build your own sandwiches",
+		hours: "11:00 AM - 8:00 PM",
+		location_description: "305 South Craig Street",
+		location: 'Oakland',
+		open: true,
+		image: false,
+		on_campus: false,
+		url: 'http://www.eatuniquecafe.com/'
 	}
 ];
