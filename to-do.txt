@@ -3,14 +3,16 @@
 - turn off all locations if on campus is specified
 - put #ddd in border-color
 - change all 0.15s to var
-- clear button for filter and search
 - admissions map
-- header navbar suggestions
-- add link to dining services site
+- add x out to both filter and menu
 
-<!-- decrease white space in cards -->
+- add link to dining services site
+- clear and apply button for filter and search
+
 <!-- change colors and style the headers and stuff -->
 <!-- hover interactivity on map, popup?, 3d option on image, pins, message -->
 <!-- background colors to divide sections of page -->
 <!-- fix specials and soups buttons -->
-<!-- make header fixed? -->
+<!-- make header fixed? or back to top button -->
+
+<!-- decrease white space in cards -->

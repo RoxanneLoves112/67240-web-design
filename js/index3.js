@@ -1,7 +1,7 @@
 let locations_list;
 $(document).ready(function() {
 	locations_list = new Vue({
-		el: '.container',
+		el: '.location-content',
 		data: {
 			locations: locations,
 			search_term: '',
@@ -37,8 +37,10 @@ $(document).ready(function() {
 			processLocations: function() {
 				let locations = this.locations.slice(0);
 				locations = locations.sort(function(a, b) {
-					if (b.name > a.name) return -1;
-					if (b.name < a.name) return 1;
+					b_name = b.name.toLowerCase();
+					a_name = a.name.toLowerCase();
+					if (b_name > a_name) return -1;
+					if (b_name < a_name) return 1;
 					return 0;
 				});
 				// filter
@@ -105,6 +107,19 @@ $(document).ready(function() {
 				for (let subsetting of subsettings) {
 					this.filter_settings[setting][subsetting] = value ? false : true;
 				}
+			},
+			resetQuery: function() {
+				let settings = this.filter_settings;
+				let on_subsettings = Object.keys(settings['on_campus']);
+				let off_subsettings = Object.keys(settings['off_campus']);
+				settings.open = false;
+				settings.order_online = false;
+				for (let subsetting of on_subsettings) {
+					settings['on_campus'][subsetting] = true;
+				};
+				for (let subsetting of off_subsettings) {
+					settings['off_campus'][subsetting] = true;
+				};
 			}
 		}
 	});
