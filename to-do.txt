@@ -1,4 +1,3 @@
-- alphabetical case-insensitive
 - turn off on campus setting if location is specified
 - turn off all locations if on campus is specified
 - put #ddd in border-color
@@ -8,11 +7,13 @@
 
 - add link to dining services site
 - clear and apply button for filter and search
+- alphabetical case-insensitive
 
 <!-- change colors and style the headers and stuff -->
 <!-- hover interactivity on map, popup?, 3d option on image, pins, message -->
 <!-- background colors to divide sections of page -->
 <!-- fix specials and soups buttons -->
 <!-- make header fixed? or back to top button -->
+change availability
 
 <!-- decrease white space in cards -->

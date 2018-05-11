@@ -427,7 +427,7 @@ let locations = [
 		image: false,
 		on_campus: false,
 		url: 'http://www.subway.com/'
-	}
+	},
 	{
 		name: "Eat N' Park",
 		desc: "Family restaurants serving breakfast, lunch, and dinner to guests",
@@ -438,7 +438,7 @@ let locations = [
 		image: false,
 		on_campus: false,
 		url: 'http://www.eatnpark.com/'
-	}
+	},
 	{
 		name: "Vocelli Pizza",
 		desc: "Build your own sandwiches",
@@ -449,7 +449,7 @@ let locations = [
 		image: false,
 		on_campus: false,
 		url: 'http://www.vocellipizza.com/'
-	}
+	},
 	{
 		name: "Quiznos",
 		desc: "Build your own sandwiches",
@@ -460,7 +460,7 @@ let locations = [
 		image: false,
 		on_campus: false,
 		url: 'http://www.quiznos.com/Home.aspx'
-	}
+	},
 	{
 		name: "Eat Unique",
 		desc: "Build your own sandwiches",

@@ -36,6 +36,11 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.daily-specials {
+	width: fit-content;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
 /* Test Styles */
 /* Locations Browser */
 .browser-locations {
@@ -47,6 +52,14 @@ body {
 	/*background-color: #f1ecde;*/
 	background-color: var(--main-background-color);
 	margin-bottom: 40px;
+}
+.browser-locations .map-locations .cmu-map area:hover {
+	-webkit-filter: blur(5px);  /*Safari 6.0 - 9.0*/ 
+    filter: blur(5px);
+    z-index: 2;
+}
+.browser-locations .map-locations .cmu-map area {
+	display: block;
 }
 .browser-locations .map-locations .cmu-map {
 	display: block;
@@ -319,6 +332,9 @@ header, .navbar {
 	display: inline-block;
 	width: 100%;
 }
+.menu-system .navbar li a:hover {
+	color: grey;
+}
 
 
 .icon.cmu a, .icon.dining, .navbar a {
@@ -355,7 +371,6 @@ header {
 .icon.dining {
 	display: none;
 }
-
 .menu.icon {
 	background-image: url('../images/menu.svg');
 	position: absolute;
@@ -454,6 +469,9 @@ header {
 		top: calc(50% - 16px);
 		right: 15px;
 	}
+	.icon.dining:hover {
+		color: rgb(189,0,4,.75);
+	}
 	.cmu {
 		background-image: url('../images/cmu-logo.png');
 		position: absolute;
@@ -497,7 +515,8 @@ header {
 
 		cursor: pointer;
 	}
-	.browser-locations .query-locations .icon-filter {
+	.browser-locations .query-locations .icon-filter,
+	.browser-locations .filter-locations .apply-button {
 		display: none;
 	}
 	.browser-locations .query-and-locations {
